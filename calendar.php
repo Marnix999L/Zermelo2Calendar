@@ -1,4 +1,13 @@
 <?php
+    /**
+     * Copyright (C) 2016 Marnix Looijmans.
+     * All Rights Reserved.
+     *
+     * This code is subject to the XYZ License.
+     * You may use, distribute and modify this code
+     * under the terms of the XYZ license.
+     */
+
     // Set appropriate headers for ics file.
     header("Content-type: text/calendar; charset=utf-8");
     header("Content-Disposition: attachment; filename=zermelo.ics");
