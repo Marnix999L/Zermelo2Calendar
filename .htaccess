@@ -1,0 +1,4 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^/?([a-z0-9]+)/([a-z0-9]+)/([0-9]+)/([0-9]+)/calendar.ics$ /calendar.php?institution=$1&access_token=$2&start=$3&end=$4
+</IfModule>
