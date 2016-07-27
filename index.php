@@ -11,7 +11,7 @@
     /**
      * Checks if a date in a string is valid.
      *
-     * @param String $dateString The string with tht date to validate.
+     * @param String $dateString The string with the date to validate.
      * @return bool True if the date is valid, otherwise false.
      */
     function isDateInputValid($dateString) {
