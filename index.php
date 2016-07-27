@@ -99,8 +99,10 @@
                 if ($data) {
                     // Store the received access token.
                     $accessToken = $data["access_token"];
+                    // Get current server name.
+                    $serverName = $_SERVER["HTTP_HOST"];
                     // Put together the resulted URL.
-                    $resultURL = "http://zermelo2calendar.marnixlooijmans.dsmynas.org/".$institution."/".$accessToken."/".$startDate."/".$endDate."/calendar.ics";
+                    $resultURL = "http://".$serverName."/".$institution."/".$accessToken."/".$startDate."/".$endDate."/calendar.ics";
                 }
             }
         }
