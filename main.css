@@ -1,0 +1,53 @@
+/**
+ * Copyright (C) 2016 Marnix Looijmans.
+ * All Rights Reserved.
+ *
+ * This code is subject to the XYZ License.
+ * You may use, distribute and modify this code
+ * under the terms of the XYZ license.
+ */
+
+body {
+    background-color: #eee;
+}
+
+.content {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+.content .lead {
+    margin-bottom: 50px;
+}
+
+.input-field {
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.error-block {
+    text-align: left;
+    margin-bottom: 10px;
+    color: #f00;
+    font-weight: bold;
+}
+.input-error {
+    margin-bottom: 15px;
+    margin-top: -5px;
+}
+
+.btn-result {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.well {
+    text-align: left;
+}
