@@ -34,8 +34,8 @@
 
     // Retrieve and store the get parameters.
     $institution = (is_string($_GET["institution"])) ? $_GET["institution"] : null;
-    $startTime = (is_numeric($_GET["start"]) && !is_float($_GET["start"])) ? (int) $_GET["start"] : null;
-    $endTime = (is_numeric($_GET["end"]) && !is_float($_GET["end"])) ? (int) $_GET["end"] : null;
+    $startTime = (is_numeric($_GET["start"])) ? intval($_GET["start"]) : null;
+    $endTime = (is_numeric($_GET["end"])) ? intval($_GET["end"]) : null;
     $accessToken = (is_string($_GET["access_token"])) ? $_GET["access_token"] : null;
 
     // Now check for any invalid parameters.
@@ -46,7 +46,7 @@
 
     // Define the domain name separately, because we are gonna need it later.
     $domain = $institution.".zportal.nl";
-    // Put the URL together to which we will make the http request.
+    // Put together the URL for the http request.
     $URL = "https://".$domain."/api/v2/appointments?user=~me&valid=true&cancelled=false".
             "&start=".$startTime.
             "&end=".$endTime.
