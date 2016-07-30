@@ -143,7 +143,7 @@
                         Use this URL to receive an updated schedule. The URL is valid for <b>one year</b>.
                     <?php else: ?>
                         Fill out this form to request a URL.
-                        You can find the institution and authorization code by logging in your school&#39;s Zermelo Portal.
+                        You can find the institution and authorization code by logging in to your school&#39;s Zermelo Portal.
                         Then go to <b>Koppelingen</b> on the left and click <b>Koppel App</b>.
                     <?php endif; ?>
                 </p>
