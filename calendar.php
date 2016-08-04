@@ -8,10 +8,6 @@
      * under the terms of the Apache License 2.0.
      */
 
-    // Set appropriate headers for ics file.
-    header("Content-type: text/calendar; charset=utf-8");
-    header("Content-Disposition: attachment; filename=zermelo.ics");
-
     /**
      * Escape characters in a given string.
      *
@@ -62,6 +58,10 @@
     $result = curl_exec($ch);
     // Close the cURL instance.
     curl_close($ch);
+
+    // Set appropriate headers for ics file.
+    header("Content-type: text/calendar; charset=utf-8");
+    header("Content-Disposition: attachment; filename=zermelo.ics");
 
     // If something went wrong, the result will be false.
     if ($result) {
